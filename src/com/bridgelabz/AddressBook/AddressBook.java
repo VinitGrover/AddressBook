@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class AddressBook {
     static Scanner sc = new Scanner(System.in);
-
     ArrayList<Contacts> list = new ArrayList<>();
 
     public void contactList() {
@@ -33,6 +32,20 @@ public class AddressBook {
         Contacts cList = new Contacts(firstName, lastName, address, city, state, phone, email);
 
         list.add(cList);
+
+        /*System.out.println("if you want to change any data of a person, reply y/n : ");
+        String check = sc.nextLine();
+
+        if (check.equals("y")) {
+            for(Contacts cThrough: list){
+                System.out.println("enter name whose details you want to edit : ");
+                String name = sc.nextLine();
+                if(cThrough.getFirstName().equals(name)){
+                    System.out.println("enter updated phone number : ");
+                    cThrough.setPhone(sc.next());
+                }
+            }
+        }*/
 
     }
 }
