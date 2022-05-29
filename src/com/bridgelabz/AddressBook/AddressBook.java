@@ -33,19 +33,6 @@ public class AddressBook {
 
         list.add(cList);
 
-        /*System.out.println("if you want to change any data of a person, reply y/n : ");
-        String check = sc.nextLine();
-
-        if (check.equals("y")) {
-            for(Contacts cThrough: list){
-                System.out.println("enter name whose details you want to edit : ");
-                String name = sc.nextLine();
-                if(cThrough.getFirstName().equals(name)){
-                    System.out.println("enter updated phone number : ");
-                    cThrough.setPhone(sc.next());
-                }
-            }
-        }*/
 
     }
 }
