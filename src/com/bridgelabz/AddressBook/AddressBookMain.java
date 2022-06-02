@@ -18,7 +18,7 @@ public class AddressBookMain {
         System.out.println("enter name whose details you want to edit : ");
         String name = AddressBook.sc.nextLine();
 
-            int i =0;
+            int i =0 ;
             for (Contacts cThrough : a1.list) {
 
                 if (cThrough.getFirstName().equals(name)) {
