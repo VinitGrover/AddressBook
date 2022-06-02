@@ -51,7 +51,8 @@ public class AddressBookMain {
 
         Map<String, AddressBook> map = new HashMap<>();
         map.put("1",a1);
-        System.out.println(map.get(a1));
+        map.get(a1);
+
 
     }
 }
