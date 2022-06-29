@@ -1,7 +1,6 @@
 package com.bridgelabz.AddressBook;
 
 public class ContactDetails {
-
     private String firstName;
     private String lastName;
     private String address;
@@ -88,7 +87,6 @@ public class ContactDetails {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
-
     @Override
     public String toString() {
         return "ContactDetails{" + "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", address='"
@@ -96,4 +94,5 @@ public class ContactDetails {
                 + ", mobileNo=" + mobileNumber + ", emailId='" + emailId + '\'' + '}';
 
     }
+
 }
