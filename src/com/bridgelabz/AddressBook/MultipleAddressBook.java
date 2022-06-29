@@ -1,5 +1,4 @@
 package com.bridgelabz.AddressBook;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -72,12 +71,11 @@ public class MultipleAddressBook {
             System.out.println(entry.getKey() + "[]");
         }
     }
-
     public void printContactsInBook() {
         for (Map.Entry<String, AddressBook> entry : addressBookMap.entrySet()) {
             System.out.println("The contacts in the Book of < " + entry.getKey() + " > are!...");
             System.out.println(entry.getValue().contactDetailsList);
         }
     }
-}
 
+}

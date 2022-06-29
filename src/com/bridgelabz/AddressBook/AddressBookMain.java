@@ -1,10 +1,7 @@
 package com.bridgelabz.AddressBook;
-
-
 import java.util.Scanner;
 
 public class AddressBookMain {
-
     public void choose() {
         MultipleAddressBook obj1 = new MultipleAddressBook();
         AddressBook obj2 = new AddressBook();
@@ -41,7 +38,6 @@ public class AddressBookMain {
             }
         }
     }
-
     public static void main(String[] args) {
         AddressBookMain addressBookMain = new AddressBookMain();
         addressBookMain.choose();
