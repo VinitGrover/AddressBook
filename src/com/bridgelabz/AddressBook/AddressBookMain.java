@@ -55,7 +55,7 @@ public class AddressBookMain {
             if (byteData != -1) {
                 System.out.println(byteData);
             }
-        } catch (IOException e2) {
+        } catch (IOException e2) { 
             e2.printStackTrace();
         }
 
