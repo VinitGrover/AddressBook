@@ -5,6 +5,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class AddressBook {
+
     ContactDetails person = new ContactDetails();
     List<ContactDetails> contactDetailsList = new ArrayList<>();
 
@@ -22,7 +23,6 @@ public class AddressBook {
                 System.out.println("The entered person is already exist. Enter new name");
             } else {
                 System.out.println("Enter the contact details of person ");
-
                 writeContact();
                 System.out.println("contact added Successfully");
             }
@@ -50,6 +50,7 @@ public class AddressBook {
         person = new ContactDetails(firstName, lastName, address, city, state, zipCode, mobileNumber, emailId);
         contactDetailsList.add(person);
     }
+
     public void searchByName(String name) {
         List<ContactDetails> collect = contactDetailsList.stream().filter(p -> p.getFirstName().equalsIgnoreCase(name))
                 .collect(Collectors.toList());
@@ -74,6 +75,7 @@ public class AddressBook {
             System.out.println("Search result: " + contact);
         }
     }
+
     public void countContactsByUsingCity(String cityName) {
         long count = 0;
         long count1 = contactDetailsList.stream().filter(g -> g.getCity().equalsIgnoreCase(cityName)).count();
@@ -83,16 +85,19 @@ public class AddressBook {
         System.out.println("Contact List :" + count1);
 
     }
+
     public void sortByName() {
         List<ContactDetails> list = contactDetailsList.stream().collect(Collectors.toList());
         list.stream().sorted((g1, g2) -> ((String) g1.getFirstName()).compareTo(g2.getFirstName()))
                 .forEach(contact -> System.out.println(contact.getFirstName() + " " + contact.getLastName()));
     }
+
     public void sortByCity() {
         List<ContactDetails> list = contactDetailsList.stream().collect(Collectors.toList());
         list.stream().sorted((g1, g2) -> ((String) g1.getCity()).compareTo(g2.getCity()))
                 .forEach(contact -> System.out.println(contact.getFirstName() + " " + contact.getLastName()));
     }
+
     public void editContact() {
         System.out.println("Enter firstname of contact you want edit");
         Scanner scanner = new Scanner(System.in);
@@ -169,6 +174,7 @@ public class AddressBook {
             }
         }
     }
+
     public void deleteContact() {
         System.out.println("Enter the first name of contact you want to delete");
         Scanner scanner = new Scanner(System.in);
@@ -182,6 +188,7 @@ public class AddressBook {
             }
         }
     }
+
     public void viewByOptions() {
         Scanner scanner = new Scanner(System.in);
         while (true) {

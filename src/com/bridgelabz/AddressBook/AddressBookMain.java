@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class AddressBookMain {
+
     public void choose() {
         MultipleAddressBook obj1 = new MultipleAddressBook();
         AddressBook obj2 = new AddressBook();
@@ -49,17 +50,17 @@ public class AddressBookMain {
 
         try {
             InputStream inputStream = new FileInputStream(
-                    "C:\\Users\\shard\\Desktop\\day27.txt");
+                    "D:\\GitProgram\\AddressBook\\src\\com\\bridgelabz\\AddressBook\\abc.txt");
             int byteData = inputStream.read();
             if (byteData != -1) {
                 System.out.println(byteData);
             }
         } catch (IOException e2) {
-
+            e2.printStackTrace();
         }
 
         File file = new File(
-                "D:\\GitProgram\\AddressBook0\\day27.txt");
+                "D:\\GitProgram\\AddressBook\\src\\com\\bridgelabz\\AddressBook\\abc.txt");
         try {
             boolean isFileCreated = file.createNewFile();
             if (isFileCreated) {
@@ -71,6 +72,7 @@ public class AddressBookMain {
             e.printStackTrace();
         }
         AddressBookMain addressBookMain = new AddressBookMain();
+
         addressBookMain.choose();
     }
 }
